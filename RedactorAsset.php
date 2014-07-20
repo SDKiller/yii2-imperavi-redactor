@@ -54,7 +54,7 @@ class RedactorAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public function init($options = [])
+    public function init()
     {
         parent::init();
 
