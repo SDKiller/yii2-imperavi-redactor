@@ -1,0 +1,32 @@
+{
+    "name": "zyx/yii2-imperavi-redactor",
+    "description": "A Yii2 port of original Imperavi Redactor Widget for Yii (yiiext/imperavi-redactor-widget)",
+    "keywords": ["yii2", "redactor", "imperavi", "wysiwyg", "visual editor"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/SDKiller/yii2-imperavi-redactor/issues",
+        "source": "https://github.com/SDKiller/yii2-imperavi-redactor"
+    },
+    "authors": [
+        {
+            "name": "Veaceslav Medvedev",
+            "email": "slavcopost@gmail.com"
+        },
+        {
+            "name": "Alexander Makarov",
+            "email": "sam@rmcreative.ru",
+            "homepage": "http://rmcreative.ru/"
+        },
+        {
+            "name": "Serge Postrash aka SDKiller",
+            "email": "jexy.ru@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": { "zyx\\widgets\\": "" }
+    }
+}
