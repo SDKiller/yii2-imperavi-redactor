@@ -14,40 +14,23 @@ use yii\web\AssetBundle;
 
 class RedactorAsset extends AssetBundle
 {
-    /**
-     * @inheritdoc
-     */
+
     public $sourcePath = '@vendor/zyx/yii2-imperavi-redactor/assets';
 
-    /**
-     * @inheritdoc
-     */
     public $depends = [
         'yii\web\JqueryAsset',
     ];
 
-    /**
-     * @inheritdoc
-     */
     public $js = [
         'redactor.min.js',
     ];
 
-    /**
-     * @inheritdoc
-     */
     public $css = [
         'redactor.css',
     ];
 
-    /**
-     * @inheritdoc
-     */
     public $jsOptions = [];
 
-    /**
-     * @inheritdoc
-     */
     public $cssOptions = [];
 
 
