@@ -47,7 +47,7 @@ class Redactor extends InputWidget
         $lang = empty($this->clientOptions['lang']) ? Yii::$app->language : $this->clientOptions['lang'];
         $lang = substr($lang, 0, 2);
         if ($lang !== 'en' && is_file(Yii::getAlias($bundle->basePath, false) . '/lang/' . $lang . '.js')) {
-            $view->registerJsFile($bundle->baseUrl . '/lang/' . $lang . '.js', [$bundle->className()]);
+            $view->registerJsFile($bundle->baseUrl . '/lang/' . $lang . '.js', [$bundle::className()]);
         }
 
 
@@ -56,9 +56,9 @@ class Redactor extends InputWidget
         if (isset($this->clientOptions['plugins']) && is_array($this->clientOptions['plugins'])) {
             foreach ($this->clientOptions['plugins'] as $plugin) {
                 if (in_array($plugin, $plugins, true)) {
-                    $view->registerJsFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.js', [$bundle->className()]);
+                    $view->registerJsFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.js', [$bundle::className()]);
                     if ($plugin == 'clips') {
-                        $view->registerCssFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.css', [$bundle->className()]);
+                        $view->registerCssFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.css', [$bundle::className()]);
                     }
                 }
             }
