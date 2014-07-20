@@ -1,7 +1,7 @@
 Imperavi Redactor Widget for Yii2
 =================================
 
-This is  a A Yii2 port of original [Imperavi Redactor Widget](https://github.com/yiiext/imperavi-redactor-widget) for Yii (yiiext/imperavi-redactor-widget).
+This is a Yii2 port of original [Imperavi Redactor Widget](https://github.com/yiiext/imperavi-redactor-widget) for Yii (yiiext/imperavi-redactor-widget).
 
 `ImperaviRedactorWidget` is a wrapper for [Imperavi Redactor](http://imperavi.com/redactor/),
 a high quality WYSIWYG editor.
