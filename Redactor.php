@@ -51,7 +51,7 @@ class Redactor extends InputWidget
         }
 
 
-        $plugins = ['fontcolor', 'fontfamily', 'fontsize', 'clips', 'fullscreen'];
+        $plugins = ['fontcolor', 'fontfamily', 'fontsize', 'clips', 'fullscreen', 'textdirection'];
 
         if (isset($this->clientOptions['plugins']) && is_array($this->clientOptions['plugins'])) {
             foreach ($this->clientOptions['plugins'] as $plugin) {
