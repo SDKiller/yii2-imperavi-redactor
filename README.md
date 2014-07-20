@@ -13,6 +13,10 @@ but since Yii community bought OEM license you can use it for free with Yii.
 Installation
 ------------
 
+```
+composer.phar require --prefer-dist zyx/yii2-imperavi-redactor "*"
+```
+
 TBD
 
 
