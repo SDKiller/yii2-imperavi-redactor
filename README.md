@@ -39,10 +39,10 @@ For more options see [Imperavi Redactor documentation](http://imperavi.com/redac
                 'convertVideoLinks' => true,
                 'autoresize'        => true,
                 'placeholder'       => Yii::t('app', 'Redactor placeholder text'),
-                'plugins'           => ['fontcolor', 'fontfamily', 'fontsize'],
+                'plugins'           => ['table', 'video', 'fontcolor', 'fontfamily', 'fontsize'],
                 'buttons'           => ['html', 'formatting', 'bold', 'italic', 'deleted', 'underline', 'horizontalrule',
                                         'alignment', 'unorderedlist', 'orderedlist', 'outdent', 'indent',
-                                        'table', 'link', 'image', 'video', 'file'],
+                                        , 'link', 'image', 'file'],
                 'imageUpload'       => Yii::$app->urlManager->createUrl(['news/upload']),
             ],
         ]
