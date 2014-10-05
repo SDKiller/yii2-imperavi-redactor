@@ -15,6 +15,10 @@ use yii\web\JsExpression;
 use yii\widgets\InputWidget;
 
 
+/**
+ * Requires Imperavi Redactor WYSIWYG editor version 10.0.*
+ */
+
 class Redactor extends InputWidget
 {
     /**
