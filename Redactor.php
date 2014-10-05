@@ -17,7 +17,6 @@ use yii\widgets\InputWidget;
 
 class Redactor extends InputWidget
 {
-
     /**
      * @var array Redactor settings
      * @see http://imperavi.com/redactor/docs/settings/
@@ -50,8 +49,22 @@ class Redactor extends InputWidget
             $view->registerJsFile($bundle->baseUrl . '/lang/' . $lang . '.js', [$bundle::className()]);
         }
 
-
-        $plugins = ['fontcolor', 'fontfamily', 'fontsize', 'clips', 'fullscreen', 'textdirection'];
+        $plugins = [
+            'clips',
+            'counter',
+            'definedlinks',
+            'filemanager',
+            'fontcolor',
+            'fontfamily',
+            'fontsize',
+            'fullscreen',
+            'imagemanager',
+            'limiter',
+            'table',
+            'textdirection',
+            'textexpander',
+            'video'
+        ];
 
         if (isset($this->clientOptions['plugins']) && is_array($this->clientOptions['plugins'])) {
             foreach ($this->clientOptions['plugins'] as $plugin) {
@@ -81,4 +94,5 @@ class Redactor extends InputWidget
             echo Html::textarea($this->name, $this->value, $this->options);
         }
     }
+
 }
