@@ -73,9 +73,9 @@ class Redactor extends InputWidget
         if (isset($this->clientOptions['plugins']) && is_array($this->clientOptions['plugins'])) {
             foreach ($this->clientOptions['plugins'] as $plugin) {
                 if (in_array($plugin, $plugins, true)) {
-                    $view->registerJsFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.js', [$bundle::className()]);
+                    $view->registerJsFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.js', ['depends' => [$bundle::className()]]);
                     if ($plugin == 'clips') {
-                        $view->registerCssFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.css', [$bundle::className()]);
+                        $view->registerCssFile($bundle->baseUrl . '/plugins/' . $plugin . '/' . $plugin . '.css', ['depends' => [$bundle::className()]]);
                     }
                 }
             }
