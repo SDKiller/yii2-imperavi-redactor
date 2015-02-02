@@ -50,7 +50,7 @@ class Redactor extends InputWidget
         $lang = empty($this->clientOptions['lang']) ? Yii::$app->language : $this->clientOptions['lang'];
         $lang = substr($lang, 0, 2);
         if ($lang !== 'en' && is_file(Yii::getAlias($bundle->basePath, false) . '/lang/' . $lang . '.js')) {
-            $view->registerJsFile($bundle->baseUrl . '/lang/' . $lang . '.js', [$bundle::className()]);
+            $view->registerJsFile($bundle->baseUrl . '/lang/' . $lang . '.js', ['depends' => [$bundle::className()]]);
         }
 
         $plugins = [
@@ -81,9 +81,11 @@ class Redactor extends InputWidget
             }
         }
 
-        $id            = $this->options['id'];
         $clientOptions = Json::encode($this->clientOptions);
-        $js            = 'jQuery(\'#' . $id . '\').redactor(' . $clientOptions . ');';
+
+        $id = isset($this->options['id']) ? $this->options['id'] : $this->id;
+        $js = 'jQuery(\'#' . $id . '\').redactor(' . $clientOptions . ');';
+
         $view->registerJs($js);
     }
 
