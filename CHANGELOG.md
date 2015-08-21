@@ -2,6 +2,9 @@ Changelog
 =========
 
 2015-08-08
+- Imperavi redactor updated to 10.2.3
+
+2015-08-08
 - Imperavi redactor, plugins and languages updated to 10.2.2
 
 2015-02-05
